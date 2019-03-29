@@ -1,0 +1,9 @@
+<form action="/students/search" method="post">
+  <label>Search students:</label>
+  <input type="textfield" name="name">
+  <input type="submit" value="search">
+</form>
+
+<% @students.each do |student| %>
+  <%= render partial: 'student', locals: {student: student} %>
+<% end %>
