@@ -1,0 +1,4 @@
+<%= @classrooms.each do |single_class| %>
+    <%= render partial: "classroom", locals: {classroom: single_class} %>
+    <% end %>
+    
